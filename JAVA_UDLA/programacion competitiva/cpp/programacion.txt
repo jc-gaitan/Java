@@ -1,0 +1,25 @@
+> numero triangulares: n(n+1)/2
+
+> sumatoria: n*(n+1)/2
+
+> numero catalan:
+cat(n) = (1/(n+1))*(2n n)
+
+> maximo comun divisor: algoritmo de euclides
+
+c++ 11 ya tiene la implementacion en __gcd(a, b);
+
+> minomo comun multiplo: 
+MCM(a,b) = (a*b)/MCD(a,b)
+
+> aritmetica modular
+
+> exponenciacion binaria
+
+> exponenciacion modular 
+
+> criba de erastotenes: 
+	El unico numero primo es el 2
+	
+	
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar parametros del request HTTP - URL</title>
+</head>
+<body>
+<h1>Enviar parametros del request HTTP - URL</h1>
+<ul>
+    <li>
+        <!-- ruta en thymeleaf -->
+        <!-- La ruta tiene que existir en el controlador, el valor a enviar se escribe en los (nombreVariable=Valor)-->
+        <a th:href="@{/params/string(texto='Enviar parametro desde thymeleaf')}">/params/string?texto=Enviar parametro
+            desde thymeleaf</a></li>
+    <li>
+        <a th:href="@{/params/string(texto='Que tal')}">/params/string?texto=Que tal</a>
+    </li>
+    <li>
+        <a th:href="@{/params/mix-params(saludo='Como estas?', numero=16)}">/params/mix-params</a>
+    </li>
+    <li>
+        <a th:href="@{/params/mix-params-request(saludo='Como estas?', numero=16)}">/params/mix-params-request</a>
+    </li>
+</ul>
+</body>
+</html>

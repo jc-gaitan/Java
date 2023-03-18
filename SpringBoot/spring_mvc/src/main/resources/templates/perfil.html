@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+      <!-- Para poder usar thymeleaf tenemos que poner xmlns:th="http://www.thymeleaf.org" -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}"></title>
+</head>
+<body>
+    <!-- con th usamos thymeleaf -->
+    <h1 th:text="${title}"></h1>
+
+    <span th:text="${user.nombre}"></span>
+    <span th:text="${user.apellido}"></span><br>
+
+    <!-- if en thymeleaf -->
+    <!-- Si el usuario tiene un email se muestra el span, de lo contrario se ocualta -->
+    <span th:if="${user.email}" th:text="${user.email}"></span><br>
+    <span th:if="${user.email == null}">el usuario no tiene email</span>
+</body>
+</html>

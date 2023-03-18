@@ -1,0 +1,6 @@
+Crear ejecutable de la aplicacion - debemos tener JAVA_HOME en las variables de entorno
+1. abrir cmd en la ruta donde se encuentra el proyecto ej: cd D:\SpringBoot\spring_mvc
+2. ejecutar el comando .\mvnw.cmd package
+
+										ruta donde esta guardado el jar
+3. Para correr el proyecto escribimos el comando: java -jar .\target\spring_mvc-0.0.1-SNAPSHOT.jar
